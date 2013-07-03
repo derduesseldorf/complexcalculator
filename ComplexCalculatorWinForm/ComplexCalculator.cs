@@ -26,10 +26,10 @@ namespace ComplexCalculatorWinForm
         /// </summary>
         enum Operation
         {
-            add,
-            substract,
-            multiply,
-            divide
+            ADD,
+            SUBTRACT,
+            MULTIPLY,
+            DIVIDE
         }; 
 
         /// <summary>
@@ -66,19 +66,19 @@ namespace ComplexCalculatorWinForm
 
                 switch (operation)
                 {
-                    case Operation.add:
+                    case Operation.ADD:
                         setResultText(ComplexNumber.Add(fPart, sPart));
                         break;
 
-                    case Operation.substract:
+                    case Operation.SUBTRACT:
                         setResultText(ComplexNumber.Subtract(fPart, sPart));
                         break;
 
-                    case Operation.multiply:
+                    case Operation.MULTIPLY:
                         setResultText(ComplexNumber.Multiply(fPart, sPart));
                         break;
 
-                    case Operation.divide:
+                    case Operation.DIVIDE:
 
                         try
                         {
@@ -165,22 +165,22 @@ namespace ComplexCalculatorWinForm
 
         private void btnMultiply_Click_1(object sender, EventArgs e)
         {
-            Calculate(Operation.multiply); 
+            Calculate(Operation.MULTIPLY); 
         }
 
         private void btnDivide_Click_1(object sender, EventArgs e)
         {
-            Calculate(Operation.divide); 
+            Calculate(Operation.DIVIDE); 
         }
 
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
-            Calculate(Operation.add);
+            Calculate(Operation.ADD);
         }
 
         private void btnSubstract_Click_1(object sender, EventArgs e)
         {
-            Calculate(Operation.substract);
+            Calculate(Operation.SUBTRACT);
         }
 
         #endregion
