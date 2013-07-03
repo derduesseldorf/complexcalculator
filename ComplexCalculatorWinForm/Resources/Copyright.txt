@@ -1,0 +1,10 @@
+Complex Calculator C# Version
+-------------------------------
+
+Nícolas Ballmann 
+Michael Blunck 
+Dirk-Aron Burken
+Mirko Düßeldorf
+Andreas Hützen
+
+-------------------------------
